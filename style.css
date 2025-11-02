@@ -1,0 +1,167 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(83, 83, 83, 0.7);
+}
+.modal-content {
+  min-width: 500px;
+  background: white;
+  padding: 1.5em;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lightgrey;
+}
+
+#content {
+  display: flex;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  /* border-collapse: collapse; */
+  border: none;
+  border-radius: 8px;
+  margin: 2rem 1rem;
+}
+
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+  background: white;
+  background-clip: padding-box;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 12.5%;
+  padding: 0.2rem;
+  height: 100%;
+  position: relative;
+  border: 1px dashed lightgrey;
+  border-radius: 5px;
+  text-shadow: black 1px 1px, black 1px -1px, black -1px 1px, black -1px -1px;
+}
+
+.description {
+  font-size: 10pt;
+  font-style: italic;
+}
+
+.sorcière {
+  background-color: red;
+  color: yellow;
+  font-weight: bold;
+}
+
+.loup-garou {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.momie {
+  background-color: lightgray;
+  color: white;
+  font-weight: bold;
+}
+
+.zombie {
+  background-color: greenyellow;
+  color: #e15eff;
+  font-weight: bold;
+}
+
+.fantôme {
+  background-color: white;
+  color: lightgray;
+  font-weight: bold;
+}
+
+.citrouille-maudite {
+  background-color: orange;
+  color: #61c061;
+  font-weight: bold;
+}
+
+.vampire {
+  color: darkred;
+  font-weight: bold;
+}
+
+.inactif {
+  text-decoration: line-through;
+  background-color: red;
+}
+
+footer.inactive {
+  height: 7vh !important;
+  cursor: zoom-in;
+}
+
+footer.active {
+  height: 50vh !important;
+  cursor: zoom-out;
+}
+
+.halloween {
+  font-family: "Halloween";
+}
+
+@font-face {
+  font-family: "Halloween";
+  src: url("fonts/InkedWhimsy-Three.ttf");
+}
+
+table > tr:first-child > td:first-child,
+table > tr:first-child > th:first-child {
+  border-top-left-radius: 8px;
+}
+
+table > tr:first-child > td:last-child,
+table > tr:first-child > th:last-child {
+  border-top-right-radius: 8px;
+}
+table > tr:last-child > td:first-child,
+table > tr:last-child > th:first-child {
+  border-bottom-left-radius: 8px;
+}
+table > tr:last-child > td:last-child,
+table > tr:last-child > th:last-child {
+  border-bottom-right-radius: 8px;
+}
+
+table {
+  background: black;
+  overflow: hidden;
+}
+
+th {
+  padding: 0 0.2rem;
+}
